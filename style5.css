@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Arima Madurai', cursive;
-    background: #fafafa;
+    background: #fff;
 }
 
 p {
@@ -80,8 +80,7 @@ a, a:hover, a:focus {
 }
 
 #sidebar ul.components {
-    padding: 20px 0;
-    border-bottom: 1px solid #efa9c7;
+    padding: 20px 0 0 0;
 }
 
 #sidebar ul p {
@@ -141,6 +140,20 @@ a.download {
 a.article, a.article:hover {
     background: #6d7fcc !important;
     color: #fff !important;
+}
+
+.social-icons {
+    padding: 0 !important;
+    list-style-type: none;
+  }
+
+.social-icons li img{
+    width: 25%;
+    float: left;
+    padding: 10px 20px;
+    border-left: 1px solid #db5d78;
+    border-top: 2px solid #db5d78;
+    border-bottom: 2px solid #db5d78;
 }
 
 
