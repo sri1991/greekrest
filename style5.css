@@ -7,8 +7,9 @@ body {
     background: #fff;
 }
 
+
 p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Arima Madurai', cursive;
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
@@ -79,6 +80,10 @@ a, a:hover, a:focus {
     border-bottom: #efa9c7 1px solid;
 }
 
+.sidebar-header img{
+    width: 200px;
+}
+
 #sidebar ul.components {
     padding: 20px 0 0 0;
 }
@@ -99,6 +104,17 @@ a, a:hover, a:focus {
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
     background: #fff;
+}
+
+.contact-side{
+    padding: 0 50px;
+    position:absolute;
+    bottom:0;
+}
+.contact-side p{
+    word-wrap: break-word;
+    font-size: 15px;
+    color: #db5d78;
 }
 
 
@@ -212,6 +228,20 @@ a.article, a.article:hover {
 
 .bannerImage{
     width: 100%;
+}
+
+#contact{
+    margin-bottom: 20px;
+}
+footer {
+    font-family: 'Arima Madurai', cursive;
+    background: #fff;
+    text-align: center;
+}
+
+footer p{
+    padding: 0 0 0 0 !important;
+    
 }
 
 /* ---------------------------------------------------
