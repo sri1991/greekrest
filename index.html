@@ -43,10 +43,10 @@
                 <li class="active">
                     <a href="#home">Home</a>
                 </li>
-                <li>
+                <!--<li>
                     <a href="#about">About Us</a>
 
-                </li>
+                </li>-->
                 <li>
                     <a href="/menu.html">Menu</a>
                 </li>
@@ -62,8 +62,19 @@
             </ul>
 
             <div class="contact-side">
-                <p>+91 9999 9999 99</p>
-                <p>mail@spiceandroyals.com</p>
+                <!--<p>25 March Road, <br/>Malia 70007, <br/>Crete, Greece.</p>-->
+                <div class="sub-contact">
+                    <img class="contact-icon" src="./images/landphone.png"/>
+                    <p class="contact-content">(0030)2897032375</p>
+                </div>
+                <div class="sub-contact">
+                    <img class="contact-icon" src="./images/smartphone.png"/>
+                    <p class="contact-content">(0030)6948394734</p>
+                </div>
+                <div class="sub-contact">
+                    <img class="contact-icon" src="./images/email.png"/>
+                    <p class="contact-content">info@spiceandroyals.com</p>
+                </div>
             </div>
 
         </nav>
@@ -127,16 +138,18 @@ From the team at Spice & Royals
     </script>
     <script>
             function myMap() {
-              var myCenter = new google.maps.LatLng(51.508742,-0.120850);
+              var myCenter = new google.maps.LatLng(35.2864234,25.444203);
               var mapCanvas = document.getElementById("map");
               var mapOptions = {center: myCenter, zoom: 5};
               var map = new google.maps.Map(mapCanvas, mapOptions);
               var marker = new google.maps.Marker({position:myCenter});
+              var infowindow = new google.maps.InfoWindow({content:'<strong>25 March Road, Malia 70007, Crete, Greece</strong>'});
+              infowindow.open(map, marker);
               marker.setMap(map);
             }
             </script>
             
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOz2Yd-O_Hd3lFlgZGo4_eC2UMo_arsmk&callback=myMap"></script>
+            <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCOz2Yd-O_Hd3lFlgZGo4_eC2UMo_arsmk&callback=myMap"></script>
 </body>
 
 </html>

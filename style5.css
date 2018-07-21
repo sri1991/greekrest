@@ -77,7 +77,7 @@ a, a:hover, a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #F9BACB;
+    background: linear-gradient(#fc9cb7, #F9BACB, #FFC2D1);
     border-bottom: #efa9c7 1px solid;
 }
 
@@ -116,6 +116,12 @@ a, a:hover, a:focus {
     word-wrap: break-word;
     font-size: 15px;
     color: #db5d78;
+}
+.contact-icon{
+    display: block;
+    float: left;
+    width: 20px;
+    margin-right: 10px;
 }
 
 
@@ -261,13 +267,27 @@ footer p{
 .price-tag{
     padding-top: 0 !important;
     padding-bottom: 0 !important;
-    font-size: 12px;
+    font-size: 15px;
+    font-style: italic;
     margin-bottom: 0 !important;
 }
 .description{
     color: #a59fa1;
     font-size: 15px;
     padding-top: 0 !important;
+}
+.spice{
+    display: block;
+    float: left;
+    width: 70%;
+}
+.spiceTag{
+    display: block;
+    float: left;
+    width: 100%;
+}
+.spiceTag img{
+    padding: 20px 0 0 0;
 }
 
 /* ---------------------------------------------------
