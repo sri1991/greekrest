@@ -604,6 +604,14 @@ Cooked with fresh garlic and tomatoes, tossed in a variety of spices & served in
         </footer>
         </div>
     </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
 </body>
 
 </html>
