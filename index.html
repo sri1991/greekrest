@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -28,7 +28,7 @@ We hope you enjoy every bit of your experience with us and promise to deliver a 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-    <script>
+    <script async>
         $( '#sidebar ul li a' ).on( 'click', function () {
             console.log('**** coming here *********');
             $( '#sidebar ul' ).find( 'li.active' ).removeClass( 'active' );
@@ -135,7 +135,7 @@ From the team at Spice & Royals
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
-    <script type="text/javascript">
+    <script type="text/javascript" async>
         $(document).ready(function () {
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
@@ -143,7 +143,7 @@ From the team at Spice & Royals
             });
         });
     </script>
-    <script>
+    <script async>
             function myMap() {
               var myCenter = new google.maps.LatLng(35.2864234,25.444203);
               var mapCanvas = document.getElementById("map");
