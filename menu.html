@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <title>Spice and Royals</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
+    <!--JQUERY-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <script>
+        $( '#sidebar ul li a' ).on( 'click', function () {
+            console.log('**** coming here *********');
+            $( '#sidebar ul' ).find( 'li.active' ).removeClass( 'active' );
+            $( this ).parent( 'li' ).addClass( 'active' );
+        });
+    </script>
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="./images/logo.png" />
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About Us</a>
+
+                </li>
+                <li class="active">
+                    <a href="#menu">Menu</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            <ul class="social-icons">
+                <li><img src = "./images/facebook-logo.png"/></li>
+                <li><img src = "./images/instagram-logo.png"/></li>
+                <li><img src = "./images/google-plus.png"/></li>
+                <li><img src = "./images/twitter-logo-silhouette.png"/></li>
+            </ul>
+
+            <div class="contact-side">
+                <p>+91 9999 9999 99</p>
+                <p>mail@spiceandroyals.com</p>
+            </div>
+
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+            <img id="home" class="bannerImage" src="./images/banner-1.jpg" />
+        <section id="about" class="container">
+            <h3>Menu</h3>
+            <div class="row">
+              <div class="line"></div>
+              <div class="menu-section-header col-md-12">
+                <h4>Starters</h4>
+              </div>
+              <div class="menu-section-header col-md-12">
+                <h6>Tandoori Dishes</h6>
+                <p class="subtext">(All these dishes are available in MAIN COURSE PORTIONS too)</p>
+                <p>Delicacies marinated in heavenly Greek yoghurt, delicately spiced, with various layers of seasoning, using a moist touch of tandoori  paste as a coating and then slow cooked in traditional clay ovens from the Indian sub-continent which brings out the best & the most succulent flavours from seafood and meats.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">TANDOORI CHICKEN</p>
+                <p class="price-tag">4.25 – MAIN – 11.95</p>
+                <p class="description">Chicken on the bone, delicately spiced, marinated in yoghurt and roasted.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">LAMB CHOPS</p>
+                <p class="price-tag">5.25 – MAIN – 12.95</p>
+                <p class="description">Lamb chops marinated in herbs & spices, slow cooked tenderly, served with friend onions on top.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">CHICKEN TIKKA</p>
+                <p class="price-tag">3.95 – MAIN – 10.95</p>
+                <p class="description">Chicken breast delicately marinated with seasoning.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">LAMB TIKKA</p>
+                <p class="price-tag">4.25 – MAIN – 11.95</p>
+                <p class="description">Tender pieces of the lamb marinated and slow cooked.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">SEEKH KEBAB</p>
+                <p class="price-tag">4.25 – MAIN – 11.95</p>
+                <p class="description">Minced lamb mixed with onions, herbs and spices. Cooked on skewers in tandoor.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">SALMON IN TANDOOR</p>
+                <p class="price-tag">5.95 – MAIN – 14.95</p>
+                <p class="description">Salmon fillet sourced from the local fish markets layered with chef’s signature spice and herbs and marinated; then slow cooked in tandoor.</p>
+              </div>
+            </div>
+            
+        </section>
+        <footer>
+            <p>&copy;Spice and Royals 2018</p>
+            <p>Website designed by: <a href="https://www.facebook.com/phy.saikat" target="_blank">Saikat Bhattacharya</a> & team</p>
+        </footer>
+        </div>
+    </div>
+</body>
+
+</html>
