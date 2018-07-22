@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <title>Spice and Royals</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
+    <!--JQUERY-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <script>
+        $( '#sidebar ul li a' ).on( 'click', function () {
+            console.log('**** coming here *********');
+            $( '#sidebar ul' ).find( 'li.active' ).removeClass( 'active' );
+            $( this ).parent( 'li' ).addClass( 'active' );
+        });
+    </script>
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="./images/logo.png" />
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <!--<li>
+                    <a href="#about">About Us</a>
+
+                </li>-->
+                <li class="active">
+                    <a href="#menu">Menu</a>
+                </li>
+                <li>
+                    <a href="/#contact">Contact</a>
+                </li>
+            </ul>
+            <ul class="social-icons">
+                <li><img src = "./images/facebook-logo.png"/></li>
+                <li><img src = "./images/instagram-logo.png"/></li>
+                <li><img src = "./images/google-plus.png"/></li>
+                <li><img src = "./images/twitter-logo-silhouette.png"/></li>
+            </ul>
+
+            <div class="contact-side">
+                <!--<p>25 March Road, <br/>Malia 70007, <br/>Crete, Greece.</p>-->
+                <div class="sub-contact">
+                    <img class="contact-icon" src="./images/landphone.png"/>
+                    <p class="contact-content">(0030)2897032375</p>
+                </div>
+                <div class="sub-contact">
+                    <img class="contact-icon" src="./images/smartphone.png"/>
+                    <p class="contact-content">(0030)6948394734</p>
+                </div>
+                <div class="sub-contact">
+                    <img class="contact-icon" src="./images/email.png"/>
+                    <p class="contact-content">info@spiceandroyals.com</p>
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+            <img id="home" class="bannerImage" src="./images/banner-1.jpg" />
+        <section id="about" class="container">
+            <h3>Menu</h3>
+            <div class="row">
+              <div class="line"></div>
+              <div class="menu-section-header col-md-12">
+                <h4>Starters</h4>
+              </div>
+              <div class="menu-section-header col-md-12">
+                <h6>Tandoori Dishes</h6>
+                <p class="subtext">(All these dishes are available in MAIN COURSE PORTIONS too)</p>
+                <p>Delicacies marinated in heavenly Greek yoghurt, delicately spiced, with various layers of seasoning, using a moist touch of tandoori  paste as a coating and then slow cooked in traditional clay ovens from the Indian sub-continent which brings out the best & the most succulent flavours from seafood and meats.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">TANDOORI CHICKEN</p>
+                <p class="price-tag">4.25 – MAIN – 11.95</p>
+                <p class="description">Chicken on the bone, delicately spiced, marinated in yoghurt and roasted.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">LAMB CHOPS</p>
+                <p class="price-tag">5.25 – MAIN – 12.95</p>
+                <p class="description">Lamb chops marinated in herbs & spices, slow cooked tenderly, served with friend onions on top.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">CHICKEN TIKKA</p>
+                <p class="price-tag">3.95 – MAIN – 10.95</p>
+                <p class="description">Chicken breast delicately marinated with seasoning.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">LAMB TIKKA</p>
+                <p class="price-tag">4.25 – MAIN – 11.95</p>
+                <p class="description">Tender pieces of the lamb marinated and slow cooked.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">SEEKH KEBAB</p>
+                <p class="price-tag">4.25 – MAIN – 11.95</p>
+                <p class="description">Minced lamb mixed with onions, herbs and spices. Cooked on skewers in tandoor.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">SALMON IN TANDOOR</p>
+                <p class="price-tag">5.95 – MAIN – 14.95</p>
+                <p class="description">Salmon fillet sourced from the local fish markets layered with chef’s signature spice and herbs and marinated; then slow cooked in tandoor.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">MALAI CHICKEN TIKKA</p>
+                <p class="price-tag">5.95 – MAIN – 13.95</p>
+                <p class="description">Marinated chicken thighs with cashew nuts and cream cheese.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">SHASHLIK (CHICKEN/LAMB/KING PRAWNS)</p>
+                <p class="price-tag">4.95 – MAIN – 12.95</p>
+                <p class="description">King Prawns, Lamb or chicken pieces with peppers, onions and tomatoes. Grilled in the tandoor.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">MIX KEBAB</p>
+                <p class="price-tag">4.25 – MAIN – 11.95</p>
+                <p class="description">Sheekh kebab, Shami kebab & Chicken Tikka.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">TANDOORI KING PRAWNS</p>
+                <p class="price-tag">5.95 – MAIN – 14.95</p>
+                <p class="description">Marinated king prawn, cooked in chef’s special spices and herbs. Served with fried onions on top.</p>
+              </div>
+            </div>
+
+            <!--Starters - 2-->
+
+            <div class="row">
+              <div class="line"></div>
+              <div class="menu-section-header col-md-12">
+                <h6>Non-Tandoori & Veg Starters</h6>
+                <!--<p class="subtext">(All these dishes are available in MAIN COURSE PORTIONS too)</p>-->
+                <!--<p>Delicacies marinated in heavenly Greek yoghurt, delicately spiced, with various layers of seasoning, using a moist touch of tandoori  paste as a coating and then slow cooked in traditional clay ovens from the Indian sub-continent which brings out the best & the most succulent flavours from seafood and meats.</p>-->
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">SHAMEE KEBAB</p>
+                <p class="price-tag">3.95</p>
+                <p class="description">Lightly spiced pan fried mince meat, served with salad.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">MEAT SAMOSA</p>
+                <p class="price-tag">3.95</p>
+                <p class="description">Spiced mincemeat in flaky pastry case.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">VEGETABLE SAMOSA</p>
+                <p class="price-tag">3.50</p>
+                <p class="description">Spiced vegetables in a flaky pastry case.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">GARLIC MUSHROOM</p>
+                <p class="price-tag">3.95</p>
+                <p class="description">Sliced mushrooms cooked in lots of garlic and seasoned with mixed spices.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">CHICKEN/AUBERGINE PAKORA</p>
+                <p class="price-tag">3.95</p>
+                <p class="description">Sliced potatoes coated in a spiced butter and deep fried.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">PRAWN PURI</p>
+                <p class="price-tag">4.95</p>
+                <p class="description">Lightly spiced prawns cooked with onions and peppers/ Served with a puri.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">ONION BHAJI</p>
+                <p class="price-tag">3.50</p>
+                <p class="description">Deep fried finely chopped onions with chick pea flour, mixed spices, lentils and mustard seeds.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">ALOO CHAAT</p>
+                <p class="price-tag">3.75</p>
+                <p class="description">Finely diced potatoes blended with herbs and spices.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">KING PRAWN BUTTERFLY</p>
+                <p class="price-tag">4.95</p>
+                <p class="description">Lightly spiced king prawns covered in egg & breadcrumbs and fried in ghee.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">CHICKEN CHAAT PURI</p>
+                <p class="price-tag">5.25</p>
+                <p class="description">Chicken cooked in medium spices, served with a puri (Briskly fried pancake).</p>
+              </div>
+            </div>
+
+            <!--Main Course-->
+
+            <div class="row">
+              <div class="line"></div>
+              <div class="menu-section-header col-md-12">
+                <h4>The Royal Club</h4>
+              </div>
+              <div class="menu-section-header col-md-12">
+                <h6>Chicken - 9.95</h6>
+                <h6>Chicken Tikka - 10.95</h6>
+                <h6>Lamb - 10.95</h6>
+                <h6>Lamb Tikka - 11.95</h6>
+                <h6>Prawn - 10.95</h6>
+                <h6>King Prawn - 14.95</h6>
+                <h6>Vegetable - 8.95</h6>
+                <!--<p class="subtext">(All these dishes are available in MAIN COURSE PORTIONS too)</p>-->
+                <!--<p>Delicacies marinated in heavenly Greek yoghurt, delicately spiced, with various layers of seasoning, using a moist touch of tandoori  paste as a coating and then slow cooked in traditional clay ovens from the Indian sub-continent which brings out the best & the most succulent flavours from seafood and meats.</p>-->
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">SAAG</p>
+                <p class="description">Cooked with fresh spinach & garnished with tomatoes, garlic and a variety of handpicked spices.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">MURG MAKHANI</p>
+                <p class="description">Marinated chicken cooked in a rich tomato based sauce, with garlic, almonds and rich fresh cream, topped with melted cheese (optional).</p>
+              </div>
+              <div class="col-md-6">
+                <div class="spiceTag">
+                  <p class="item-name spice">DHABE DI KHUSHBOO</p>
+                  <img src="./images/spice.png"/>
+                </div>
+                <p class="description">(Dhabas are Roadside open air diners in the sub-continent, situated on highways & outskirts)<br/>
+ 
+Cooked with lots of garlic, long sliced ginger, onions, whole green finger chillies  and tossed with ‘DHABA’ style whole spices in a medium hot sauce, garnished with a rustic touch.
+</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">BUTTER CHICKEN </p>
+                <p class="description">Chicken cooked with light & subtle spices in a rich butter sauce.</p>
+              </div>
+              <div class="col-md-6">
+                <div class="spiceTag">
+                  <p class="item-name spice">GARLIC CHICKEN</p>
+                  <img src="./images/spice.png"/>
+                </div>
+                <div class="spiceTag">
+                  <p class="item-name spice">GARLIC CHILLI CHICKEN</p>
+                  <img src="./images/spice.png"/>
+                  <img src="./images/spice.png"/>
+                </div>
+                <p class="description">(Also available in Lamb, King Prawns and Veg.)<br/>
+ 
+Cooked with fresh garlic and tomatoes, tossed in a variety of spices & served in a thick sauce.
+</p>
+              </div>
+              <div class="col-md-6">
+                <div class="spiceTag">
+                  <p class="item-name spice">JALFREZI</p>
+                  <img src="./images/spice.png"/>
+                </div>
+                <p class="description">Cooked with chunky onion, peppers and green finger chillies in a medium hot sauce prepared thick. </p>
+              </div>
+              <div class="col-md-6">
+                <div class="spiceTag">
+                  <p class="item-name spice">KARAHI</p>
+                  <img src="./images/spice.png"/>
+                </div>
+                <p class="description">Marinated meat cooked with peppers, onions and tomatoes. Served in a Karahi, a traditional Indian bowl to get that rustic flavor.</p>
+              </div>
+            </div>
+
+            <!--Biriyani-->
+
+            <div class="row">
+              <div class="line"></div>
+              <div class="menu-section-header col-md-12">
+                <h4>Biriyani</h4>
+              </div>
+              <div class="menu-section-header col-md-12">
+                <p>Rice dishes cooked with briskly fried onions, a pinch of fenugreek leaves, egg (optional), turmeric dusting and a vast range of flavoured whole & ground spices. Served with a vegetable medium sauce on the side. </p>
+                <p>Ancient India witnessed the valour & glory of some of the greatest Mughal emperors in the world and it is in those royal kitchens, where Biryani has its origin from; which dates back to the early years of 14th Century. Biryani, as a delicacy, reflects the lavishness of the Mughal era, its majestic grandeur & opulence.</p>
+                <h6>Chicken - 8.95</h6>
+                <h6>Chicken Tikka - 10.95</h6>
+                <h6>Lamb - 10.95</h6>
+                <h6>Lamb Tikka - 11.95</h6>
+                <h6>Prawn - 10.95</h6>
+                <h6>King Prawn - 14.95</h6>
+                <h6>Vegetable - 7.95</h6>
+              </div>
+              
+            </div>
+
+            <!--Classic of Indian Rasoi-->
+
+            <div class="row">
+              <div class="line"></div>
+              <div class="menu-section-header col-md-12">
+                <h4>Classics of Indian Rasoi (Kitchen) </h4>
+              </div>
+              <div class="menu-section-header col-md-12">
+                <h6>Chicken - 7.95</h6>
+                <h6>Chicken Tikka - 8.95</h6>
+                <h6>Lamb - 8.95</h6>
+                <h6>Lamb Tikka - 9.95</h6>
+                <h6>Prawn - 9.95</h6>
+                <h6>King Prawn - 14.95</h6>
+                <h6>Vegetable - 6.95</h6>
+                <!--<p class="subtext">(All these dishes are available in MAIN COURSE PORTIONS too)</p>-->
+                <!--<p>Delicacies marinated in heavenly Greek yoghurt, delicately spiced, with various layers of seasoning, using a moist touch of tandoori  paste as a coating and then slow cooked in traditional clay ovens from the Indian sub-continent which brings out the best & the most succulent flavours from seafood and meats.</p>-->
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">BHUNA</p>
+                <p class="description">Finely chopped onions and tomato garnished with ground spices cooked to high flavours, in a medium sauce.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">DOPIAZA</p>
+                <p class="description">Chunk onions cooked with a fine balance of bell peppers, tossed in mixed herbs and spices in a thick medium sauce.</p>
+              </div>
+              <div class="col-md-6">
+                <div class="spiceTag">
+                  <p class="item-name spice">BALTI</p>
+                  <img src="./images/spice.png"/>
+                </div>
+                <p class="description">Prepared with rich balti paste, along with chopped onions, tomatoes, peppers, kasuri methi, mixed ground spices with a bit heavy on garam masala, served in a rich medium hot sauce.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">ROGAN JOSH</p>
+                <p class="description">An aromatic elegance, having its origin in the northern states of Jammu & Kashmir. Rich in taste; prepared from thin chopped onions in a tomato based sauce.</p>
+              </div>
+              <div class="col-md-6">
+                <div class="spiceTag">
+                  <p class="item-name spice">MADRAS</p>
+                  <img src="./images/spice.png"/>
+                  <img src="./images/spice.png"/>
+                </div>
+                <p class="description">Comes in a thick hot sauce, heavy on red chilli powder, lemon juice with onion and tomato paste.</p>
+              </div>
+              <div class="col-md-6">
+                <div class="spiceTag">
+                  <p class="item-name spice">VINDALOO</p>
+                  <img src="./images/spice.png"/>
+                  <img src="./images/spice.png"/>
+                  <img src="./images/spice.png"/>
+                </div>
+                <p class="description">Served in a thick hot and fiery sauce, lots of red chilli powder with tomato puree and a big piece of potato.</p>
+              </div>
+              <div class="col-md-6">
+                <div class="spiceTag">
+                  <p class="item-name spice">PHALL</p>
+                  <img src="./images/spice.png"/>
+                  <img src="./images/spice.png"/>
+                  <img src="./images/spice.png"/>
+                  <img src="./images/spice.png"/>
+                </div>
+                <p class="description">Not for the faint hearted, this dish explores the extremities of human taste buds. Served in a an extremely hot and fiery sauce with a piquant taste, there is a very heavy use  of red chilli powder, finished with mixed spices and tomato puree.</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="menu-section-header col-md-12">
+                <h6>Classics in Creame and Mild Sauce</h6>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">KORMA</p>
+                <p class="description">A classic North Indian delicacy, where the meat or the vegetables are braised with cream and yoghurt & served in a thick mild sauce made of coconut, almond powder and grinded cashew nuts.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">PASANDA</p>
+                <p class="description">Served in the royal Mogul courts, this dish is made of thick creamy sauce with rich  flavours, mixed with almond flakes.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">KASHMIRI</p>
+                <p class="description">A summer special!  This is a rich mild and creamy dish with fruits, lychees or bananas.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">TIKKA MASALA</p>
+                <p class="description">National Dish of the Great Britain since 2001, Chicken Tikka Masala has earned its reputation from an ever growing Curry loving British population in & outside of the UK. Served in a thick and creamy orange coloured sauce, this dish is well deserving of its accolades.</p>
+              </div>
+            </div>
+
+            <!--Signature dishes-->
+            <div class="row">
+              <div class="line"></div>
+              <div class="menu-section-header col-md-12">
+                <h4>Signature Dishes</h4>
+                <!--<p class="subtext">(All these dishes are available in MAIN COURSE PORTIONS too)</p>-->
+                <!--<p>Delicacies marinated in heavenly Greek yoghurt, delicately spiced, with various layers of seasoning, using a moist touch of tandoori  paste as a coating and then slow cooked in traditional clay ovens from the Indian sub-continent which brings out the best & the most succulent flavours from seafood and meats.</p>-->
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">KING PRAWN MALAI</p>
+                <p class="price-tag">17.95</p>
+                <p class="description">King Prawns cooked in a rich creamy sauce with ground cashew, almonds, spices, cinnamon and cardamom whole, bay leaf, poppy seeds, fluttered mustard seeds with added coconut milk & honey and rounded up with pistachio dust on top. </p>
+              </div>
+              <div class="col-md-6">
+                <div class="spiceTag">
+                  <p class="item-name spice">BOLLYWOOD MASALA</p>
+                  <img src="./images/spice.png"/>
+                </div>
+                <p class="price-tag">18.95</p>
+                <p class="description">A true cinematic brilliance, with an opening scene of the protagonist King Prawn, with strong content by tender handpicked spices marinated along with its ever so beautiful leading lady played by the soft & tender chicken tikka, leading to a variety of different strong characters played by green peppers, tomatoes, onions, garlic, ginger and fiery slit red chillies in a villainous role; through a delicious journey of twists and turns we finally reach the climax filled with lush mince meat and it all ends on a happy note.</p>
+              </div>
+              <div class="col-md-6">
+                <div class="spiceTag">
+                  <p class="item-name spice">QUEEN VICTORIA'S FAVOURITE</p>
+                  <img src="./images/spice.png"/>
+                </div>
+                <p class="price-tag">18.95</p>
+                <p class="description">After becoming the Empress of India in 1877, Queen Victoria got intrigued by Indian culture, language and most certainly the food. One of those in her list of favourite food was Mutton cutlet. We tried to modify this dish with contemporary twists and present it to you in its Royal glory. Finely cut lamb pieces marinated in over 20 spices are tossed in bell pepper, onions, cinnamon sticks and bay leaf. The aroma and the taste will make you feel no less than a Royal.</p>
+              </div>
+            </div>
+
+            <!--Side dishes-->
+            <div class="row">
+              <div class="line"></div>
+              <div class="menu-section-header col-md-12">
+                <h4>Side Dishes</h4>
+                <p class="subtext">(ALL SIDES – 3.70 – MAIN – 6.50)</p>
+                <p>Light fried vegetables with subtle use of spices.</p>
+              </div>
+              <div class="col-md-4">
+                <p class="item-name">ALOO SAAG</p>
+                <p class="description">Briskly fried spinach with potatoes.</p>
+              </div>
+              <div class="col-md-4">
+                <p class="item-name">MUSHROOM BHAJI</p>
+                <p class="description">Fried diced mushroom in dry gravy. </p>
+              </div>
+              <div class="col-md-4">
+                <p class="item-name">DRY MIXED VEGETABLES</p>
+                <p class="description">Chopped vegetables with a sprinkle of spice.</p>
+              </div>
+              <div class="col-md-4">
+                <p class="item-name">ALOO GOBI</p>
+                <p class="description">Potatoes fried with diced cauliflower with a touch of spice.</p>
+              </div>
+              <div class="col-md-4">
+                <p class="item-name">AUBERGINE BHAJI</p>
+                <p class="description">Finely chopped up pieces of aubergine, shallow fried with spice.</p>
+              </div>
+              <div class="col-md-4">
+                <p class="item-name">CHANA MASALA</p>
+                <p class="description">Chick peas boiled & then fried with spice in dry gravy.</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="line"></div>
+              <div class="menu-section-header col-md-12">
+                <h4>Breads & Rices</h4>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">NAAN</p>
+                <p class="price-tag">2.90</p>
+                <p class="description">Traditional bread made in tandoor.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">PESHAWARI NAAN</p>
+                <p class="price-tag">3.20</p>
+                <p class="description">A savoury filling of coconut & sultanas stuffed in naan.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">KEEMA NAAN</p>
+                <p class="price-tag">3.20</p>
+                <p class="description">Mince meat stuffed in naan.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">CHEESE NAAN</p>
+                <p class="price-tag">3.20</p>
+                <p class="description">Grated cheese stuffed in naan.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">GARLIC NAAN</p>
+                <p class="price-tag">3.20</p>
+                <p class="description">Minced garlic stuffed in naan.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">PLAIN PARATHA</p>
+                <p class="price-tag">2.90</p>
+                <p class="description">Traditional Indian flat breads fried on tawa (Flat pan).</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">STUFFED PARATHA</p>
+                <p class="price-tag">3.90</p>
+                <p class="description">Potatoes & a variety of vegetables stuffed in paratha.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">CHAPATI</p>
+                <p class="price-tag">2.50</p>
+                <p class="description">Thin Indian flat breads.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">TANDOORI ROTI</p>
+                <p class="price-tag">3.20</p>
+                <p class="description">Thin breads made in tandoor.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">PURI</p>
+                <p class="price-tag">2.70</p>
+                <p class="description">Thin breads briskly fried. </p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">BOLIED RICE</p>
+                <p class="price-tag">3.50</p>
+                <p class="description">Basmati rice made with ghee.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">PULAU RICE</p>
+                <p class="price-tag">3.50</p>
+                <p class="description">Thin breads briskly fried. </p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">JEERA RICE</p>
+                <p class="price-tag">3.50</p>
+                <p class="description">Basmati rice fried with cumin seeds.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">ONION FRIED RICE</p>
+                <p class="price-tag">3.50</p>
+                <p class="description">Basmati rice  fried with sliced onions.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">MUSHROOM RICE</p>
+                <p class="price-tag">3.50</p>
+                <p class="description">Basmati rice with mushrooms fried.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">KEEMA RICE</p>
+                <p class="price-tag">3.50</p>
+                <p class="description">Basmati rice fried with mince meat. </p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">SPECIAL FRIED RICE</p>
+                <p class="price-tag">3.95</p>
+                <p class="description">Basmati rice fried with peas, onions & eggs</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">ROYAL BENGAL PULAU</p>
+                <p class="price-tag">4.50</p>
+                <p class="description">A Royal recipe with chicken, prawns and peas fried with onions in basmati rice.</p>
+              </div>
+            </div>
+          
+          <div class="row">
+              <div class="line"></div>
+              <div class="menu-section-header col-md-12">
+                <h4>Bla Blas</h4>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">POPADOMS (JEERA/PLAIN) – Big Indian crackers</p>
+                <p class="price-tag">0.70 each</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">CHUTNEY TRAY</p>
+                <p class="description">Mint sauce, mango chutney, onion salad, lime pickle (optional) </p>
+                <p class="price-tag">0.50 per head sharing 1 tray or 0.50 per pot</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">RAITA</p>
+                <p class="description">Yoghurt either plain or mixed with cucumber or onion</p>
+                <p class="price-tag">1.20</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">GREEK SALAD – olives & feta cheese</p>
+                <p class="price-tag">4.50</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">CHICKEN & CHIPS</p>
+                <p class="price-tag">5.50</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">CHICKEN NUGGETS & CHIPS</p>
+                <p class="price-tag">5.50</p>
+              </div>
+              <div class="col-md-6">
+                <p class="item-name">OMLET, PEAS & CHIPS</p>
+                <p class="price-tag">4.90</p>
+              </div>
+            </div>
+            <div class="line"></div>
+        </section>
+        <footer>
+            <p>&copy;Spice and Royals 2018</p>
+            <p>Website designed by: <a href="http://saikatbhattacharya.com" target="_blank">Saikat Bhattacharya</a> & team</p>
+        </footer>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
