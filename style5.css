@@ -178,6 +178,9 @@ a.article, a.article:hover {
     border-top: 2px solid #db5d78;
     border-bottom: 2px solid #db5d78;
 }
+.social-icons li a{
+    padding: 0 !important;
+}
 
 
 
