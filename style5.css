@@ -289,6 +289,27 @@ footer p{
 .spiceTag img{
     padding: 20px 0 0 0;
 }
+/* ----------
+css for the gallery
+-----------*/
+.btn:focus, .btn:active, button:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#image-gallery .modal-footer{
+  display: block;
+}
+
+.thumb{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.modal-backdrop{
+    position: inherit;
+}
+
 
 /* ---------------------------------------------------
     MEDIAQUERIES
