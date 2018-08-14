@@ -310,6 +310,10 @@ css for the gallery
     position: inherit;
 }
 
+ .gallery-row{
+    margin-left: 0;
+    margin-right: 0;
+}
 
 /* ---------------------------------------------------
     MEDIAQUERIES
