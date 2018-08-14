@@ -53,6 +53,9 @@ We hope you enjoy every bit of your experience with us and promise to deliver a 
                     <a href="/menu.html">Menu</a>
                 </li>
                 <li>
+                    <a href="#gallery">Gallery</a>
+                </li>
+                <li>
                     <a href="#contact">Contact</a>
                 </li>
             </ul>
@@ -113,7 +116,100 @@ From the team at Spice & Royals
             
         </section>
         <!--<div class="line"></div>-->
+        <!-- Gallery code starts-->
+        <section id="gallery">
+            <div class="container">
+                <h3>Gallery</h3>
+	<div class="row">
+		<div class="row gallery-row">
+            
+            <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                   data-image="./images/gallery-img1.jpg"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail"
+                         src="./images/gallery-img1.jpg"
+                         alt="Another alt text">
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                   data-image="./images/gallery-img2.jpg"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail"
+                         src="./images/gallery-img2.jpg"
+                         alt="Another alt text">
+                </a>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                 <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                   data-image="./images/gallery-img3.jpg"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail"
+                         src="./images/gallery-img3.jpg"
+                         alt="Another alt text" height="159.59" width="235">
+                </a>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                 <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                   data-image="./images/gallery-img4.jpg"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail"
+                         src="./images/gallery-img4.jpg"
+                         alt="Another alt text" height="159.59" width="235">
+                </a>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                 <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                   data-image="./images/gallery-img5.jpg"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail"
+                         src="./images/gallery-img5.jpg"
+                         alt="Another alt text" height="159.59" width="235">
+                </a>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                 <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                   data-image="./images/gallery-img6.jpg"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail"
+                         src="./images/gallery-img6.jpg"
+                         alt="Another alt text" height="159.59" width="235">
+                </a>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="image-gallery-title"></h4>
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
+                        </button>
+
+                        <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+        </section>
         <section id="contact">
+            <h3>Our Location</h3>
             <div id="map" style="width:100%;height:300px"></div>
         </section>
         <footer>
@@ -151,7 +247,7 @@ From the team at Spice & Royals
               marker.setMap(map);
             }
             </script>
-            
+            <script src="./gallery.js"></script>
             <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCOz2Yd-O_Hd3lFlgZGo4_eC2UMo_arsmk&callback=myMap"></script>
         <script async>
                 $( '#sidebar ul li a' ).on( 'click', function () {
