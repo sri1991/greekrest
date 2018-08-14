@@ -7,6 +7,10 @@ body {
     background: #fff;
 }
 
+section{
+    margin-bottom: 100px;
+}
+
 
 p {
     font-family: 'Arima Madurai', cursive;
@@ -311,6 +315,7 @@ css for the gallery
 }
 
  .gallery-row{
+     margin-top: 50px;
     margin-left: 0;
     margin-right: 0;
 }
@@ -321,6 +326,10 @@ css for the gallery
 
 /*Scale down will take the necessary specified space that is 100px x 100px without stretching the image*/
     object-fit:scale-down;  
+}
+
+#map{
+    margin-top: 50px; 
 }
 
 /* ---------------------------------------------------
