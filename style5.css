@@ -315,6 +315,14 @@ css for the gallery
     margin-right: 0;
 }
 
+.gallery-row img{
+   width:275px;
+   height:180px;
+
+/*Scale down will take the necessary specified space that is 100px x 100px without stretching the image*/
+    object-fit:scale-down;  
+}
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
